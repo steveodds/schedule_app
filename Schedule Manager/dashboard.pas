@@ -38,8 +38,24 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-       frmdashboard_main.Show;
-       Form1.Hide;
+  If (Edit1.text = 'admin') then
+     begin
+     If (Edit2.text = 'pass') then
+        begin
+           frmdashboard_main.Show;
+           Form1.Hide
+        end
+     else
+        begin
+           Application.MessageBox('You have entered the wrong password!', 'Wrong password');
+        end;
+     end
+   else
+       begin
+          Application.MessageBox('You have entered the wrong username!', 'Wrong username');
+       end;
+
+
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
