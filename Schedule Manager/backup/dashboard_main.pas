@@ -6,7 +6,8 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  ComCtrls, StdCtrls, ECTabCtrl, ECBevel, schedule, addclasses,add_assignment;
+  ComCtrls, StdCtrls, DBGrids, ECTabCtrl, ECBevel, IBConnection, sqldb, db,
+  schedule, addclasses, add_assignment;
 
 type
 
@@ -17,9 +18,14 @@ type
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
     ECBevel1: TECBevel;
+    DBConnection: TIBConnection;
     Shape1: TShape;
     Shape2: TShape;
+    SQLQuery1: TSQLQuery;
+    SQLTransaction1: TSQLTransaction;
     StaticText1: TStaticText;
     txtNextClass: TStaticText;
     txtTime: TStaticText;
@@ -52,8 +58,7 @@ end;
 
 procedure Tfrmdashboard_main.FormCreate(Sender: TObject);
 begin
-  txtNextClass = 'ACS 455';
-  txtTime = '01:30 p.m.';
+
 end;
 
 procedure Tfrmdashboard_main.Button1Click(Sender: TObject);

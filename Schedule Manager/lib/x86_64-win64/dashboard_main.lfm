@@ -1,16 +1,16 @@
 object frmdashboard_main: Tfrmdashboard_main
-  Left = 410
-  Height = 340
-  Top = 214
+  Left = 350
+  Height = 508
+  Top = 168
   Width = 487
   Caption = 'Dashboard'
-  ClientHeight = 340
+  ClientHeight = 508
   ClientWidth = 487
   OnCreate = FormCreate
   LCLVersion = '1.8.4.0'
   object ECBevel1: TECBevel
     Left = 8
-    Height = 328
+    Height = 496
     Top = 8
     Width = 472
     Shape = bsFrame
@@ -122,5 +122,55 @@ object frmdashboard_main: Tfrmdashboard_main
     Caption = 'Exit Program'
     OnClick = Button4Click
     TabOrder = 8
+  end
+  object DBGrid1: TDBGrid
+    Left = 16
+    Height = 152
+    Top = 336
+    Width = 456
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 9
+  end
+  object Button5: TButton
+    Left = 200
+    Height = 25
+    Top = 38
+    Width = 75
+    Caption = 'Test'
+    OnClick = Button5Click
+    TabOrder = 10
+  end
+  object DBConnection: TIBConnection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'EMPLOYEE.FDB'
+    KeepConnection = False
+    Password = 'masterky'
+    Transaction = SQLTransaction1
+    UserName = 'SYSDBA'
+    CheckTransactionParams = False
+    left = 296
+    top = 440
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    left = 325
+    top = 440
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = DBConnection
+    left = 354
+    top = 440
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = DBConnection
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 383
+    top = 440
   end
 end
