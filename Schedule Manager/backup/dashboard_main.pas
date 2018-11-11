@@ -18,6 +18,7 @@ type
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
+    Button5: TButton;
     DataSource1: TDataSource;
     DBGrid1: TDBGrid;
     ECBevel1: TECBevel;
@@ -35,6 +36,7 @@ type
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
 
@@ -54,6 +56,16 @@ implementation
 procedure Tfrmdashboard_main.Button4Click(Sender: TObject);
 begin
   Application.Terminate;
+end;
+
+procedure Tfrmdashboard_main.Button5Click(Sender: TObject);
+begin
+  SQLQuery1.Close;
+  SQLQuery1.SQL.Text := 'select * from CUSTOMER';
+  DBConnection.Connected := True;
+  SQLTransaction1.Active := True;
+  SQLQuery1.Open;
+
 end;
 
 procedure Tfrmdashboard_main.FormCreate(Sender: TObject);

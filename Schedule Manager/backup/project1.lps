@@ -32,7 +32,6 @@
         <ComponentName Value="frmdashboard_main"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="55"/>
         <CursorPos X="3" Y="68"/>
@@ -46,6 +45,7 @@
         <ComponentName Value="fullschedule"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <CursorPos X="30" Y="6"/>
         <UsageCount Value="34"/>
@@ -222,7 +222,7 @@
       </Position29>
       <Position30>
         <Filename Value="dashboard_main.pas"/>
-        <Caret Line="68" Column="3" TopLine="61"/>
+        <Caret Line="68" Column="3" TopLine="55"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>
