@@ -1,13 +1,23 @@
 object frmdashboard_main: Tfrmdashboard_main
   Left = 350
-  Height = 343
+  Height = 342
   Top = 168
   Width = 487
   Caption = 'Dashboard'
-  ClientHeight = 343
+  ClientHeight = 342
   ClientWidth = 487
   OnCreate = FormCreate
   LCLVersion = '1.8.4.0'
+  object DBGrid1: TDBGrid
+    Left = 8
+    Height = 176
+    Top = 352
+    Width = 472
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 9
+  end
   object ECBevel1: TECBevel
     Left = 8
     Height = 328
@@ -122,5 +132,33 @@ object frmdashboard_main: Tfrmdashboard_main
     Caption = 'Exit Program'
     OnClick = Button4Click
     TabOrder = 8
+  end
+  object DBConnection: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'schedule.sqlite3'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    left = 224
+    top = 8
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = DBConnection
+    left = 192
+    top = 8
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = DBConnection
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 256
+    top = 8
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    left = 288
+    top = 8
   end
 end
