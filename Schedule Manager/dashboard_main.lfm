@@ -78,7 +78,7 @@ object frmdashboard_main: Tfrmdashboard_main
     ParentFont = False
     TabOrder = 3
   end
-  object StaticText5: TStaticText
+  object txtAssignment: TStaticText
     Left = 296
     Height = 48
     Top = 136

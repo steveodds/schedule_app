@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="77"/>
+        <UsageCount Value="78"/>
       </Unit0>
       <Unit1>
         <Filename Value="dashboard.pas"/>
@@ -23,7 +23,7 @@
         <UnitName Value="Dashboard"/>
         <TopLine Value="52"/>
         <CursorPos X="92" Y="55"/>
-        <UsageCount Value="77"/>
+        <UsageCount Value="78"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -35,8 +35,8 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="69"/>
-        <CursorPos X="43" Y="79"/>
-        <UsageCount Value="70"/>
+        <CursorPos X="52" Y="86"/>
+        <UsageCount Value="71"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit2>
@@ -48,7 +48,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="2"/>
         <CursorPos X="30" Y="6"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="55"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit3>
@@ -61,7 +61,7 @@
         <EditorIndex Value="3"/>
         <TopLine Value="29"/>
         <CursorPos X="9" Y="49"/>
-        <UsageCount Value="51"/>
+        <UsageCount Value="52"/>
         <Loaded Value="True"/>
       </Unit4>
       <Unit5>
@@ -73,7 +73,7 @@
         <EditorIndex Value="4"/>
         <TopLine Value="26"/>
         <CursorPos X="9" Y="46"/>
-        <UsageCount Value="47"/>
+        <UsageCount Value="48"/>
         <Loaded Value="True"/>
       </Unit5>
       <Unit6>
