@@ -1,10 +1,10 @@
 object frmdashboard_main: Tfrmdashboard_main
   Left = 350
-  Height = 342
+  Height = 329
   Top = 168
   Width = 487
   Caption = 'Dashboard'
-  ClientHeight = 342
+  ClientHeight = 329
   ClientWidth = 487
   OnCreate = FormCreate
   LCLVersion = '1.8.4.0'
@@ -17,13 +17,6 @@ object frmdashboard_main: Tfrmdashboard_main
     Columns = <>
     DataSource = DataSource1
     TabOrder = 9
-  end
-  object ECBevel1: TECBevel
-    Left = 8
-    Height = 328
-    Top = 8
-    Width = 472
-    Shape = bsFrame
   end
   object Shape2: TShape
     Left = 280

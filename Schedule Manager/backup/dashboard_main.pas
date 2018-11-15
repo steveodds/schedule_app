@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  ComCtrls, StdCtrls, DBGrids, ECTabCtrl, ECBevel, IBConnection, sqldb,
+  ComCtrls, StdCtrls, DBGrids, IBConnection, sqldb,
   sqlite3conn, db, schedule, addclasses, add_assignment;
 
 type
@@ -20,7 +20,6 @@ type
     Button4: TButton;
     DataSource1: TDataSource;
     DBGrid1: TDBGrid;
-    ECBevel1: TECBevel;
     Shape1: TShape;
     Shape2: TShape;
     DBConnection: TSQLite3Connection;
@@ -44,6 +43,8 @@ type
 
 var
   frmdashboard_main: Tfrmdashboard_main;
+  nextclass: string;
+  orderclass: string;
 
 implementation
 
@@ -56,14 +57,20 @@ begin
   Application.Terminate;
 end;
 
+
+
 procedure Tfrmdashboard_main.FormCreate(Sender: TObject);
 begin
+  orderclass := '1';
    DBConnection.Open;
    SQLQuery1.Close;
-   SQLQuery1.SQL.Text := 'select * from schedule';
+   SQLQuery1.SQL.Text := 'SELECT classname FROM schedule WHERE classorder = ' + orderclass;
    DBConnection.Connected := True;
    SQLTransaction1.Active := True;
    SQLQuery1.Open;
+   SQLQuery1.FieldByName('classname').AsString := nextclass;
+   txtNextClass.Caption := nextclass;
+
 end;
 
 procedure Tfrmdashboard_main.Button1Click(Sender: TObject);
