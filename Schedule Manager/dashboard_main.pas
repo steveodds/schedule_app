@@ -67,10 +67,10 @@ begin
    SQLQuery1.SQL.Text := 'SELECT classname FROM schedule WHERE classorder = ' + orderclass;
    DBConnection.Connected := True;
    SQLTransaction1.Active := True;
-
-   SQLQuery1.FieldByName('classname').AsString := nextclass;
-   txtNextClass.Caption := nextclass;
    SQLQuery1.Open;
+   nextclass := SQLQuery1.FieldByName('classname').AsString;
+   txtNextClass.Caption := nextclass;
+
 end;
 
 procedure Tfrmdashboard_main.Button1Click(Sender: TObject);
