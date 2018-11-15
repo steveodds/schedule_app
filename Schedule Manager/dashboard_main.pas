@@ -35,10 +35,11 @@ type
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+
   private
 
   public
-
+    //procedure ClassOrder();
   end;
 
 var
@@ -46,11 +47,17 @@ var
   nextclass: string;
   orderclass: string;
 
+
 implementation
 
 {$R *.lfm}
 
 { Tfrmdashboard_main }
+
+procedure ClassOrder();
+begin
+
+end;
 
 procedure Tfrmdashboard_main.Button4Click(Sender: TObject);
 begin
@@ -61,16 +68,21 @@ end;
 
 procedure Tfrmdashboard_main.FormCreate(Sender: TObject);
 begin
-  orderclass := '1';
+   orderclass := '1';
+   //If orderclass mod 2 > 0 Then
+   //   txtTime.Caption := '08:45 a.m.'
+   //else
+   //    txtTime.Caption := '01:30 p.m.';
    DBConnection.Open;
    SQLQuery1.Close;
-   SQLQuery1.SQL.Text := 'SELECT classname FROM schedule WHERE classorder = ' + orderclass;
+   SQLQuery1.SQL.Text := 'SELECT classname, classtime FROM schedule WHERE classorder = ' + orderclass;
+   //SQLQuery1.SQL.Text := 'SELECT classtime FROM schedule WHERE classorder = ' + orderclass;
    DBConnection.Connected := True;
    SQLTransaction1.Active := True;
    SQLQuery1.Open;
    nextclass := SQLQuery1.FieldByName('classname').AsString;
    txtNextClass.Caption := nextclass;
-
+   txtTime.Caption := SQLQuery1.FieldByName('classtime').AsString;
 end;
 
 procedure Tfrmdashboard_main.Button1Click(Sender: TObject);
