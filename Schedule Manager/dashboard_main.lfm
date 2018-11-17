@@ -6,6 +6,7 @@ object frmdashboard_main: Tfrmdashboard_main
   Caption = 'Dashboard'
   ClientHeight = 329
   ClientWidth = 487
+  DesignTimePPI = 120
   OnCreate = FormCreate
   LCLVersion = '1.8.4.0'
   object DBGrid1: TDBGrid
