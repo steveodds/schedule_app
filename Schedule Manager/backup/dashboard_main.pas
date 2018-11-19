@@ -82,12 +82,12 @@ begin
    nextclass := SQLQuery1.FieldByName('classname').AsString;
    txtNextClass.Caption := nextclass;
    txtTime.Caption := SQLQuery1.FieldByName('classtime').AsString;
-   //SQLQuery1.Close;
-   //SQLQuery1.SQL.Text := 'SELECT * FROM assignment WHERE classname = ' + nextclass;
-   //DBConnection.Connected := True;
-   //SQLTransaction1.Active := True;
-   //SQLQuery1.Open;
-   //txtAssignment.Caption := SQLQuery1.FieldByname('assignments').AsString;
+   SQLQuery1.Close;
+   SQLQuery1.SQL.Text := 'SELECT * FROM assignment WHERE classorder = ' + orderclass;
+   DBConnection.Connected := True;
+   SQLTransaction1.Active := True;
+   SQLQuery1.Open;
+   txtAssignment.Caption := SQLQuery1.FieldByname('assignments').AsString;
 end;
 
 procedure Tfrmdashboard_main.Button1Click(Sender: TObject);

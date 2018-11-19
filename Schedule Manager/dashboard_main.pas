@@ -83,7 +83,7 @@ begin
    txtNextClass.Caption := nextclass;
    txtTime.Caption := SQLQuery1.FieldByName('classtime').AsString;
    SQLQuery1.Close;
-   SQLQuery1.SQL.Text := 'SELECT * FROM assignment WHERE classname = ' + nextclass;
+   SQLQuery1.SQL.Text := 'SELECT * FROM assignment WHERE classorder = ' + orderclass;
    DBConnection.Connected := True;
    SQLTransaction1.Active := True;
    SQLQuery1.Open;

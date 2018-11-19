@@ -81,8 +81,8 @@ object frmdashboard_main: Tfrmdashboard_main
   end
   object txtAssignment: TStaticText
     Left = 296
-    Height = 48
-    Top = 136
+    Height = 96
+    Top = 105
     Width = 136
     Alignment = taCenter
     Caption = 'None'
