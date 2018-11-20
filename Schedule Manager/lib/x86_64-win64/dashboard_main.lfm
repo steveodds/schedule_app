@@ -1,7 +1,7 @@
 object frmdashboard_main: Tfrmdashboard_main
-  Left = 350
+  Left = 367
   Height = 329
-  Top = 168
+  Top = 230
   Width = 487
   Caption = 'Dashboard'
   ClientHeight = 329
