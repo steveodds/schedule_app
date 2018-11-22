@@ -19,7 +19,6 @@ type
     Button3: TButton;
     Button4: TButton;
     DataSource1: TDataSource;
-    DBGrid1: TDBGrid;
     Shape1: TShape;
     Shape2: TShape;
     DBConnection: TSQLite3Connection;
