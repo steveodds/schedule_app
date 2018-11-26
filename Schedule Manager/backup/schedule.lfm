@@ -1,114 +1,259 @@
 object fullschedule: Tfullschedule
-  Left = 400
+  Left = 456
   Height = 258
-  Top = 131
-  Width = 220
+  Top = 280
+  Width = 744
   Caption = 'Full Schedule'
   ClientHeight = 258
-  ClientWidth = 220
+  ClientWidth = 744
+  DesignTimePPI = 120
+  OnCreate = FormCreate
   LCLVersion = '1.8.4.0'
   object GroupBox1: TGroupBox
     Left = 8
-    Height = 209
+    Height = 208
     Top = 8
-    Width = 200
+    Width = 728
     Caption = 'Weekly Schedule:'
-    ClientHeight = 189
-    ClientWidth = 196
+    ClientHeight = 183
+    ClientWidth = 724
     TabOrder = 0
     object Label1: TLabel
       Left = 8
-      Height = 15
-      Top = 12
-      Width = 47
+      Height = 20
+      Top = 7
+      Width = 57
       Caption = 'Monday:'
       ParentColor = False
     end
     object StaticText1: TStaticText
-      Left = 80
-      Height = 24
-      Top = 7
+      Left = 8
+      Height = 41
+      Top = 51
       Width = 105
-      BorderStyle = sbsSunken
-      Caption = 'Class1'
+      Alignment = taCenter
+      BorderStyle = sbsSingle
+      Caption = 'None'
+      Color = clNone
+      Font.Color = clHotLight
+      Font.Height = -20
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentColor = False
       TabOrder = 0
     end
     object StaticText2: TStaticText
-      Left = 80
-      Height = 25
-      Top = 42
+      Left = 160
+      Height = 41
+      Top = 51
       Width = 105
-      BorderStyle = sbsSunken
-      Caption = 'Class2'
+      Alignment = taCenter
+      BorderStyle = sbsSingle
+      Caption = 'None'
+      Color = clNone
+      Font.Color = clHotLight
+      Font.Height = -20
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentColor = False
       TabOrder = 1
     end
     object StaticText3: TStaticText
-      Left = 80
-      Height = 24
-      Top = 78
+      Left = 310
+      Height = 41
+      Top = 51
       Width = 105
-      BorderStyle = sbsSunken
-      Caption = 'Class3'
+      Alignment = taCenter
+      BorderStyle = sbsSingle
+      Caption = 'None'
+      Color = clNone
+      Font.Color = clHotLight
+      Font.Height = -20
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentColor = False
       TabOrder = 2
     end
     object StaticText4: TStaticText
-      Left = 80
-      Height = 25
-      Top = 113
+      Left = 456
+      Height = 41
+      Top = 51
       Width = 106
-      BorderStyle = sbsSunken
-      Caption = 'Class4'
+      Alignment = taCenter
+      BorderStyle = sbsSingle
+      Caption = 'None'#13
+      Color = clNone
+      Font.Color = clHotLight
+      Font.Height = -20
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentColor = False
       TabOrder = 3
     end
     object StaticText5: TStaticText
-      Left = 80
-      Height = 24
-      Top = 149
+      Left = 608
+      Height = 40
+      Top = 52
       Width = 105
-      BorderStyle = sbsSunken
-      Caption = 'Class5'
+      Alignment = taCenter
+      BorderStyle = sbsSingle
+      Caption = 'None'#13
+      Color = clNone
+      Font.Color = clHotLight
+      Font.Height = -20
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentColor = False
       TabOrder = 4
     end
     object Label2: TLabel
-      Left = 8
-      Height = 15
-      Top = 47
-      Width = 47
+      Left = 160
+      Height = 20
+      Top = 7
+      Width = 57
       Caption = 'Tuesday:'
       ParentColor = False
     end
     object Label3: TLabel
-      Left = 8
-      Height = 15
-      Top = 83
-      Width = 64
+      Left = 310
+      Height = 20
+      Top = 7
+      Width = 79
       Caption = 'Wednesday:'
       ParentColor = False
     end
     object Label4: TLabel
-      Left = 8
-      Height = 15
-      Top = 118
-      Width = 52
+      Left = 456
+      Height = 20
+      Top = 7
+      Width = 62
       Caption = 'Thursday:'
       ParentColor = False
     end
     object Label5: TLabel
-      Left = 8
-      Height = 15
-      Top = 154
-      Width = 35
+      Left = 608
+      Height = 20
+      Top = 7
+      Width = 43
       Caption = 'Friday:'
       ParentColor = False
     end
+    object StaticText6: TStaticText
+      Left = 8
+      Height = 41
+      Top = 120
+      Width = 105
+      Alignment = taCenter
+      BorderStyle = sbsSingle
+      Caption = 'None'
+      Color = clNone
+      Font.Color = clHotLight
+      Font.Height = -20
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentColor = False
+      TabOrder = 5
+    end
   end
   object Button1: TButton
-    Left = 8
+    Left = 448
     Height = 25
     Top = 224
-    Width = 203
+    Width = 288
     Caption = 'Close'
     OnClick = Button1Click
     TabOrder = 1
+  end
+  object StaticText7: TStaticText
+    Left = 168
+    Height = 41
+    Top = 152
+    Width = 105
+    Alignment = taCenter
+    BorderStyle = sbsSingle
+    Caption = 'None'
+    Color = clNone
+    Font.Color = clHotLight
+    Font.Height = -20
+    Font.Style = [fsBold]
+    ParentFont = False
+    ParentColor = False
+    TabOrder = 2
+  end
+  object StaticText8: TStaticText
+    Left = 320
+    Height = 41
+    Top = 152
+    Width = 105
+    Alignment = taCenter
+    BorderStyle = sbsSingle
+    Caption = 'None'
+    Color = clNone
+    Font.Color = clHotLight
+    Font.Height = -20
+    Font.Style = [fsBold]
+    ParentFont = False
+    ParentColor = False
+    TabOrder = 3
+  end
+  object StaticText9: TStaticText
+    Left = 464
+    Height = 41
+    Top = 152
+    Width = 105
+    Alignment = taCenter
+    BorderStyle = sbsSingle
+    Caption = 'None'
+    Color = clNone
+    Font.Color = clHotLight
+    Font.Height = -20
+    Font.Style = [fsBold]
+    ParentFont = False
+    ParentColor = False
+    TabOrder = 4
+  end
+  object StaticText10: TStaticText
+    Left = 616
+    Height = 41
+    Top = 152
+    Width = 105
+    Alignment = taCenter
+    BorderStyle = sbsSingle
+    Caption = 'None'
+    Color = clNone
+    Font.Color = clHotLight
+    Font.Height = -20
+    Font.Style = [fsBold]
+    ParentFont = False
+    ParentColor = False
+    TabOrder = 5
+  end
+  object DBConnection: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'C:\Users\steve\Documents\GitHub\schedule_app\Schedule Manager\schedule.sqlite3'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    left = 72
+    top = 216
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = DBConnection
+    left = 104
+    top = 216
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = DBConnection
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 136
+    top = 216
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    left = 168
+    top = 216
   end
 end

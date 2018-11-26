@@ -76,7 +76,7 @@ begin
    classday := LongDayNames[DayOfWeek(Date)];
    morning := false;
    orderclass := '0';
-   If classhour <= 8 && classhour >= 12 Then
+   If classhour <= 8 AND classhour >= 12 Then
       begin
            txtTime.Caption := '08:45 a.m.';
            morning := true
