@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="81"/>
+        <UsageCount Value="82"/>
       </Unit0>
       <Unit1>
         <Filename Value="dashboard.pas"/>
@@ -24,7 +24,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="55"/>
         <CursorPos X="92" Y="55"/>
-        <UsageCount Value="81"/>
+        <UsageCount Value="82"/>
       </Unit1>
       <Unit2>
         <Filename Value="dashboard_main.pas"/>
@@ -33,10 +33,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="63"/>
-        <CursorPos X="75" Y="89"/>
-        <UsageCount Value="74"/>
+        <TopLine Value="67"/>
+        <CursorPos X="32" Y="73"/>
+        <UsageCount Value="75"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="schedule.pas"/>
@@ -46,7 +47,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="30" Y="6"/>
-        <UsageCount Value="58"/>
+        <UsageCount Value="59"/>
       </Unit3>
       <Unit4>
         <Filename Value="addclasses.pas"/>
@@ -57,7 +58,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="29"/>
         <CursorPos X="9" Y="49"/>
-        <UsageCount Value="55"/>
+        <UsageCount Value="56"/>
       </Unit4>
       <Unit5>
         <Filename Value="add_assignment.pas"/>
@@ -68,7 +69,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="26"/>
         <CursorPos X="9" Y="46"/>
-        <UsageCount Value="51"/>
+        <UsageCount Value="52"/>
       </Unit5>
       <Unit6>
         <Filename Value="dashboard_main.lfm"/>
@@ -96,9 +97,6 @@
         <UsageCount Value="8"/>
       </Unit8>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="-1"/>
-    </General>
     <JumpHistory HistoryIndex="-1"/>
   </ProjectSession>
 </CONFIG>

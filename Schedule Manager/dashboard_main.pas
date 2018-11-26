@@ -45,6 +45,7 @@ var
   frmdashboard_main: Tfrmdashboard_main;
   nextclass: string;
   orderclass: string;
+  classhour: Integer;
 
 
 implementation
@@ -67,6 +68,9 @@ end;
 
 procedure Tfrmdashboard_main.FormCreate(Sender: TObject);
 begin
+
+   classhour = 0;
+   DecodeTime(Time, classhour);
    orderclass := '3';
    //If orderclass mod 2 > 0 Then
    //   txtTime.Caption := '08:45 a.m.'

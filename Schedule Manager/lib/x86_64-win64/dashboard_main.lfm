@@ -1,24 +1,14 @@
 object frmdashboard_main: Tfrmdashboard_main
   Left = 367
-  Height = 329
+  Height = 332
   Top = 230
   Width = 487
   Caption = 'Dashboard'
-  ClientHeight = 329
+  ClientHeight = 332
   ClientWidth = 487
   DesignTimePPI = 120
   OnCreate = FormCreate
   LCLVersion = '1.8.4.0'
-  object DBGrid1: TDBGrid
-    Left = 8
-    Height = 176
-    Top = 352
-    Width = 472
-    Color = clWindow
-    Columns = <>
-    DataSource = DataSource1
-    TabOrder = 9
-  end
   object Shape2: TShape
     Left = 280
     Height = 177
