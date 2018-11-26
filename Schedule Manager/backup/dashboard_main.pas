@@ -45,7 +45,11 @@ var
   frmdashboard_main: Tfrmdashboard_main;
   nextclass: string;
   orderclass: string;
-  classhour: Integer;
+  classhour: Word;
+  morning: boolean;
+  classday: string;
+  mn, sc, ms: Word;
+  y, m: Word;
 
 
 implementation
@@ -68,14 +72,35 @@ end;
 
 procedure Tfrmdashboard_main.FormCreate(Sender: TObject);
 begin
-
-   classhour = 0;
-
-   orderclass := '3';
-   //If orderclass mod 2 > 0 Then
-   //   txtTime.Caption := '08:45 a.m.'
-   //else
-   //    txtTime.Caption := '01:30 p.m.';
+   DecodeTime(Time, classhour, mn, sc, ms);
+   classday := LongDayNames[DayOfWeek(Date)];
+   morning := false;
+   orderclass := '0';
+   If classhour <= 8 && classhour >= 12 Then
+      begin
+           txtTime.Caption := '08:45 a.m.';
+           morning := true
+      end
+   else
+       begin
+            txtTime.Caption := '01:30 p.m.';
+       end;
+   If morning Then
+      begin
+           case (classday) of
+                'Monday': orderclass := '1';
+                'Tuesday': orderclass := '2';
+                'Wednesday': orderclass := '4';
+           end;
+      end
+   else
+       begin
+            case (classday) of
+                 'Monday': orderclass := '0';
+                 'Tuesday': orderclass := '3';
+                 'Wednesday': orderclass := '4';
+            end;
+       end;
    DBConnection.Open;
    SQLQuery1.Close;
    SQLQuery1.SQL.Text := 'SELECT classname, classtime FROM schedule WHERE classorder = ' + orderclass;
